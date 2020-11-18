@@ -8,27 +8,56 @@
 /********** Base styles **********/
 * {
   box-sizing: border-box;
-}
-h1 {
-  margin-bottom: 15px;
+  margin: 0px;
+  padding: 0px;
 }
 
-p {
-  border: 1px solid black;
-  background-color: #A52A2A;
-  width: 90%;
-  height: 150px;
-  margin-right: auto;
-  margin-left: auto;
-  font-family: Helvetica;
-  color: white;
-}
 
 /* Simple Responsive Framework. */
 .row {
   width: 100%;
+  overflow: auto;
 }
+.space {
 
+}
+.h3-page{
+	background-color: gray;
+	border: 1px solid blue;
+	margin: 40px;
+}
+h3{
+	border:2px solid black ;
+	padding: 4px;
+	background-color: red;
+	color: black;
+	width: 80px;
+	text-align: center;
+    float: right;
+    width: 130px;
+
+
+}
+.chicken{
+	background-color: pink;
+	color: black;
+}
+.beef{
+	color: white;
+	background-color: red;
+}
+.sushi{
+	color: black;
+	background-color: yellow;
+}
+p{
+	text-align: left;
+	padding: 6px;
+	clear: both;
+	margin-right: auto;
+	margin-left: auto; 
+    font-family: serif;
+}
 /********** Large devices only **********/
 @media (min-width: 1200px) {
   .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
@@ -46,6 +75,7 @@ p {
   }
   .col-lg-4 {
     width: 33.33%;
+    border: 0px;
   }
   .col-lg-5 {
     width: 41.66%;
@@ -96,6 +126,7 @@ p {
   }
   .col-md-6 {
     width: 50%;
+    border: 0px;
   }
   .col-md-7 {
     width: 58.33%;
@@ -114,23 +145,45 @@ p {
   }
   .col-md-12 {
     width: 100%;
+    border: 0px;
   }
 }
-
+h1{
+	font-weight: bold;
+	color: black;
+	text-align: center;
+	margin: 20px;
+}
 </style>
 </head>
 <body>
-<h1>Responsive Layout</h1>
+<h1>Our Menu</h1>
 
 <div class="row">
-  <div class="col-lg-3 col-md-6"><p>Item 1</p></div>
-  <div class="col-lg-3 col-md-6"><p>Item 2 Wow this is cool</p></div>
-  <div class="col-lg-3 col-md-6"><p>Item 3</p></div>
-  <div class="col-lg-3 col-md-6"><p>Item 4</p></div>
-  <div class="col-lg-3 col-md-6"><p>Item 5 This is cool</p></div>
-  <div class="col-lg-3 col-md-6"><p>Item 6</p></div>
-  <div class="col-lg-3 col-md-6"><p>Item 7</p></div>
-  <div class="col-lg-3 col-md-6"><p>Item 8</p></div>
+      <div class="space">
+		  <div class="col-lg-4 col-md-6 ">
+		  	<div class="h3-page">
+			  	<h3 class="chicken" >Chichen</h3>
+			  	<p>jnjnjnj njfjlll llllllllld dd dddddddj jjjjj jjjjjjjj jjjjjjjjjjjj sjsjsj sjsjsj hh hh hhhhh hhhh hhhh hhhhh hhhhh hhhhhhhh hhhhhhhh hhhhhh hhh hh hhhh hhhh hhhhhhh hhhhhh hhhhh hhhhhhh hh hhhh hhh hhhhhhh hhhhhhh hhhhh sjsjsj sjsjs</p>		  		
+		  	</div>
+		  </div>      	
+      </div>			
+      <div class="space">
+		  <div class="col-lg-4 col-md-6 ">
+		  	<div class="h3-page">
+			  	<h3 class="beef">Beef</h3>
+			  	<p>jnjnjnj njfjlll llllllllld dd dddddddj jjjjj jjjjjjjj jjjjjjjjjjjj sjsjsj sjsjsj hh hh hhhhh hhhh hhhh hhhhh hhhhh hhhhhhhh hhhhhhhh hhhhhh hhh hh hhhh hhhh hhhhhhh hhhhhh hhhhh hhhhhhh hh hhhh hhh hhhhhhh hhhhhhh hhhhh sjsjsj sjsjs</p>		  		
+		  	</div>
+		  </div>      	
+      </div>
+      <div class="space">
+		  <div class="col-lg-4 col-md-12 ">
+		  	<div class="h3-page">
+			  	<h3 class="sushi">Sushi</h3>
+			  	<p>jnjnjnj njfjlll llllllllld dd dddddddj jjjjj jjjjjjjj jjjjjjjjjjjj sjsjsj sjsjsj hh hh hhhhh hhhh hhhh hhhhh hhhhh hhhhhhhh hhhhhhhh hhhhhh hhh hh hhhh hhhh hhhhhhh hhhhhh hhhhh hhhhhhh hh hhhh hhh hhhhhhh hhhhhhh hhhhh sjsjsj sjsjs</p>		  		
+		  	</div>
+		  </div>      	
+      </div>      
 </div>
 
 </body>
